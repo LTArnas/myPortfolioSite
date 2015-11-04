@@ -9,7 +9,8 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    @RenderPage("_Navbar.cshtml");
+    @Html.RenderPartial("_Navbar");
+    @* @RenderPage("_Navbar.cshtml"); ---Using RenderPartial instead. *@
     @RenderSection("header", false);
     @RenderBody()
     @RenderSection("footer", false);
