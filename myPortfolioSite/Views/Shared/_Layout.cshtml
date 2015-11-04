@@ -9,12 +9,12 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    @Html.RenderPartial("_Navbar");
+    @{ Html.RenderPartial("_Navbar"); }
     @* @RenderPage("_Navbar.cshtml"); ---Using RenderPartial instead. *@
-    @RenderSection("header", false);
+    @RenderSection("header", false)
     @RenderBody()
-    @RenderSection("footer", false);
-    @RenderSection("script", false);
+    @RenderSection("footer", false)
+    @RenderSection("script", false)
     <!-- TODO: CDN with fallback jQuery and Bootstrap js. -->
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
