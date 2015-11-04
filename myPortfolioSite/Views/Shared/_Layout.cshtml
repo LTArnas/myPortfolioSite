@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    <!-- TODO: CDN bootstrap css. -->
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
@@ -13,6 +14,7 @@
     @RenderBody()
     @RenderSection("footer", false);
     @RenderSection("script", false);
+    <!-- TODO: CDN with fallback jQuery and Bootstrap js. -->
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
 </body>
