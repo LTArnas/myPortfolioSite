@@ -9,9 +9,9 @@ namespace myPortfolioSite.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index()
+        public ActionResult StaticView(string viewName)
         {
-            return View();
+            return View(viewName);
         }
     }
 }

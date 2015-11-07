@@ -13,10 +13,18 @@ namespace myPortfolioSite
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            /*
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
+            */
+            // TODO: Add constraints, as right now it's a direct pass to Controller.View() so serves everything.
+            routes.MapRoute(
+                name: "Default",
+                url: "{viewName}",
+                defaults: new { controller = "Home", action = "StaticView", viewName = "Index" }
             );
         }
     }
