@@ -37,3 +37,8 @@ textarea {
 .full-viewport {
     height:100%;
 }
+
+/* Compensate for the navbar, so no overlap. */
+body > nav.navbar + .full-viewport {
+    padding-top:50px;
+}
