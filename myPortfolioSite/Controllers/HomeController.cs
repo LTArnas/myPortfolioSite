@@ -8,10 +8,23 @@ namespace myPortfolioSite.Controllers
 {
     public class HomeController : Controller
     {
+        List<string> whitelist = new List<string> {
+            "about",
+            "contact",
+            "experience",
+            "index",
+            "projects" };
+
         // GET: Home
         public ActionResult StaticView(string viewName)
         {
-            return View(viewName);
+            string viewNameRequest = "Index";
+            viewName = viewName.ToLower();
+
+            if (whitelist.Contains(viewName))
+                viewNameRequest = viewName;
+
+            return View(viewNameRequest);
         }
     }
 }
