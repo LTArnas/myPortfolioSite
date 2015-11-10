@@ -130,7 +130,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Experience.cshtml" />
+    <Content Include="Views\Home\Knowledge.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />
     <None Include="Web.Debug.config">

@@ -9,9 +9,9 @@ namespace myPortfolioSite.Controllers
     public class HomeController : Controller
     {
         List<string> whitelist = new List<string> {
-            "about",
+            /* "about", */
             "contact",
-            "experience",
+            "knowledge",
             "index",
             "projects" };
 
