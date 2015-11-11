@@ -12,6 +12,9 @@ namespace myPortfolioSite.Controllers
             /* "about", */
             "contact",
             "knowledge",
+            "Skillset",
+            "Work",
+            "Education",
             "index",
             "projects" };
 

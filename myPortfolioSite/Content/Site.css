@@ -42,3 +42,9 @@ textarea {
 body > nav.navbar + .full-viewport {
     padding-top:50px;
 }
+
+/* Navbar dropdown split-button fix, for collapsed navbar (mobile) view. 
+    Allows usage of 'pull-right' on the dropdown button.*/
+nav.navbar div.btn-group {
+    width:100%;
+}
