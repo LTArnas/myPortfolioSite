@@ -44,7 +44,20 @@ body > nav.navbar + .full-viewport {
 }
 
 /* Navbar dropdown split-button fix, for collapsed navbar (mobile) view. 
-    Allows usage of 'pull-right' on the dropdown button.*/
-nav.navbar div.btn-group {
-    width:100%;
+    Allows usage of 'pull-right' on the dropdown button.
+nav.navbar .btn-group.navbar-btn {
+    float:right
+}*/
+/*
+nav.navbar li.dropdown > a {
+    display:inline-block;
 }
+
+nav.navbar ul.dropdown-menu {
+    position:absolute;
+}
+  */  
+/* Navbar dropdown split-button with <a> fix.
+nav.navbar ul.nav.navbar-nav>li.dropdown>a {
+    display:inline;
+} */

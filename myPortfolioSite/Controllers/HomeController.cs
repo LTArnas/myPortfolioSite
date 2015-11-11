@@ -8,13 +8,14 @@ namespace myPortfolioSite.Controllers
 {
     public class HomeController : Controller
     {
+        // All entries must be lowercase, because we use .ToLower on the challenge string.
         List<string> whitelist = new List<string> {
             /* "about", */
             "contact",
             "knowledge",
-            "Skillset",
-            "Work",
-            "Education",
+            "skillset",
+            "work",
+            "education",
             "index",
             "projects" };
 
