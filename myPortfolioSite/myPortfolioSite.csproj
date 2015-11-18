@@ -126,8 +126,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <None Include="myPortfolioSite.wpp.targets" />
-    <None Include="Properties\PublishProfiles\www.arnoldasrudz.co.uk - Web Deploy.pubxml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
