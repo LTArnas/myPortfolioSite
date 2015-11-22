@@ -110,6 +110,7 @@
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\lazyload.js" />
     <Content Include="Scripts\navbar.js" />
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config">
