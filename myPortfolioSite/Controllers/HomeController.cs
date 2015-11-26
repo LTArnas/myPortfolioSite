@@ -64,10 +64,10 @@ namespace myPortfolioSite.Controllers
                     };
                     smtp.Credentials = credential;
                     smtp.Host = "smtp-mail.outlook.com";
-                    smtp.Port = 567;
+                    smtp.Port = 5;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
-                    return RedirectToAction("StaticView", "ContactSuccess");
+                    return RedirectToAction("StaticView", routeValues:"ContactSuccess");
                 }
             }
             // Notice, this return is for when modelstate.isvalid returns false.
