@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Configuration;
 using System.Net;
+using System.Net.Configuration;
 using System.Net.Mail;
 using System.Threading.Tasks;
 using myPortfolioSite.Models;
@@ -42,31 +44,29 @@ namespace myPortfolioSite.Controllers
         */
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Contact(ContactEmailForm model)
+        public ActionResult Contact(ContactEmailForm model)
         {
             if (ModelState.IsValid)
             {
-                string body = "Email From: {0} ({1}) Message: {2}";
+                // GetSection is case sensitive.
+                SmtpSection smtpConfig = (SmtpSection)ConfigurationManager.GetSection("system.net/mailSettings/smtp");
+                
+                string body = "<h1>Email From:</h1> <p>{0} ({1})</p> <h2>Message:</h2> <p>{2}</p>";
                 MailMessage message = new MailMessage();
-                message.To.Add(new MailAddress("email@gmail.com"));
-                message.From = new MailAddress("email@gmail.com");
-                message.Subject = "Site contact form test";
+                // TODO: try-catch for MailAddress construction (for null, for example)
+                message.To.Add(new MailAddress(smtpConfig.From));
+                message.From = new MailAddress(smtpConfig.From);
+                message.Subject = "Contact Form";
                 // So this is quite cool; gotta remember this method...
                 message.Body = string.Format(body, model.FromName, model.FromEmail, model.Message);
-                message.IsBodyHtml = false;
+                message.IsBodyHtml = true;
+                message.BodyEncoding = System.Text.Encoding.UTF8;
 
                 using (SmtpClient smtp = new SmtpClient())
                 {
-                    NetworkCredential credential = new NetworkCredential
-                    {
-                        UserName = "email@email.com",
-                        Password = "password" // TODO: use SecurePassword instead of Password.
-                    };
-                    smtp.Credentials = credential;
-                    smtp.Host = "smtp-mail.outlook.com";
-                    smtp.Port = 5;
-                    smtp.EnableSsl = true;
-                    await smtp.SendMailAsync(message);
+                    // TODO: try-catch sending
+                    // TODO: It'd be nice if we do the sending async...
+                    smtp.Send(message);
                     return RedirectToAction("StaticView", routeValues:"ContactSuccess");
                 }
             }
