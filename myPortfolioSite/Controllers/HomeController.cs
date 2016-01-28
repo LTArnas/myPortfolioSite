@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Routing;
 using System.Web.Mvc;
 using System.Configuration;
 using System.Net;
@@ -67,7 +68,7 @@ namespace myPortfolioSite.Controllers
                     // TODO: try-catch sending
                     // TODO: It'd be nice if we do the sending async...
                     smtp.Send(message);
-                    return RedirectToAction("StaticView", routeValues:"ContactSuccess");
+                    return RedirectToAction("StaticView", routeValues: new { viewName = "ContactSuccess" });
                 }
             }
             // Notice, this return is for when modelstate.isvalid returns false.

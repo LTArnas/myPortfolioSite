@@ -2,8 +2,8 @@
 // local URL. The order reflects the order of loading.
 var links = [
     "knowledge",
-    "projects",
-    "contact"
+    //"projects",
+    //"contact"
 ];
 
 var intervalId = undefined;

@@ -92,11 +92,23 @@
   <ItemGroup>
     <Content Include="Content\bootstrap-cyborg.css" />
     <Content Include="Content\bootstrap-cyborg.min.css" />
+    <Content Include="Content\bootstrap-darkly.min.css" />
+    <Content Include="Content\bootstrap-simplex.min.css" />
+    <Content Include="Content\bootstrap-slate.min.css" />
+    <Content Include="Content\bootstrap-superhero.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\ehwlc_logo.gif" />
+    <Content Include="Content\Images\GitHub-Mark-120px-plus.png" />
+    <Content Include="Content\Images\GitHub-Mark-32px.png" />
+    <Content Include="Content\Images\GitHub-Mark-64px.png" />
+    <Content Include="Content\Images\GitHub-Mark-Light-120px-plus.png" />
+    <Content Include="Content\Images\GitHub-Mark-Light-32px.png" />
+    <Content Include="Content\Images\GitHub-Mark-Light-64px.png" />
     <Content Include="Content\Images\justit_logo-2x.png" />
+    <Content Include="Content\Images\london-met-230x105.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
