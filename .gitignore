@@ -212,3 +212,8 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+# CUSTOM ----
+
+# Don't track files in the Images folder
+Content/Images/*

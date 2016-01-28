@@ -1,0 +1,130 @@
+﻿html, body {
+    height:100%;
+    /* padding-top: 50px;
+    padding-bottom: 20px; */
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+    */
+
+@media (min-width: 992px) {
+    .navbar-center {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        margin: auto;
+        height: 100%;
+    }
+}
+
+.jumbotron {
+    background:none;
+}
+
+.full-viewport {
+    height:100%;
+}
+
+/* Compensate for the navbar, so no overlap. */
+body > nav.navbar + .full-viewport {
+    padding-top:50px;
+}
+
+/* Navbar dropdown split-button fix, for collapsed navbar (mobile) view. 
+    Allows usage of 'pull-right' on the dropdown button.
+nav.navbar .btn-group.navbar-btn {
+    float:right
+}*/
+/*
+nav.navbar li.dropdown > a {
+    display:inline-block;
+}
+
+nav.navbar ul.dropdown-menu {
+    position:absolute;
+}
+  */  
+/* Navbar dropdown split-button with <a> fix.
+nav.navbar ul.nav.navbar-nav>li.dropdown>a {
+    display:inline;
+} */
+
+/* Increase size of text in links for the navbar, to accommodate 32px imgages. 
+nav a {
+    font-size: 32px;
+}*/
+
+/*
+.container-fluid > .row > .col-sm-12 {
+    background-color: rgb(223, 105, 26);
+}
+    */
+.panel-heading > h6 {
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+    .panel-body {
+        min-height: 220px;
+    }
+}
+
+@media (min-width: 992px) {
+    .panel-body {
+        min-height: 125px;
+    }
+}
+/*
+.panel-body {
+    min-height: 125px;
+}
+    */
+@keyframes pulse {
+    0%, 30%, 70%, 100% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0px 0px 20px white;
+    }
+}
+
+.jumbotron h1 {
+    letter-spacing: 5px;
+    font-size: xx-large;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+strong.asterisk {
+    animation: pulse 4s ease-in 0s infinite;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+div.col-xs-12 > h4 {
+    font-weight: bold;
+}
+div.col-sm-12 > h3 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
