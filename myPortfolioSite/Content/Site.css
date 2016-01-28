@@ -61,3 +61,70 @@ nav.navbar ul.dropdown-menu {
 nav.navbar ul.nav.navbar-nav>li.dropdown>a {
     display:inline;
 } */
+
+/* Increase size of text in links for the navbar, to accommodate 32px imgages. 
+nav a {
+    font-size: 32px;
+}*/
+
+/*
+.container-fluid > .row > .col-sm-12 {
+    background-color: rgb(223, 105, 26);
+}
+    */
+.panel-heading > h6 {
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+    .panel-body {
+        min-height: 220px;
+    }
+}
+
+@media (min-width: 992px) {
+    .panel-body {
+        min-height: 125px;
+    }
+}
+/*
+.panel-body {
+    min-height: 125px;
+}
+    */
+@keyframes pulse {
+    0%, 30%, 70%, 100% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0px 0px 20px white;
+    }
+}
+
+.jumbotron h1 {
+    letter-spacing: 5px;
+    font-size: xx-large;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+strong.asterisk {
+    animation: pulse 4s ease-in 0s infinite;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+div.col-xs-12 > h4 {
+    font-weight: bold;
+}
+div.col-sm-12 > h3 {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 40px;
+}

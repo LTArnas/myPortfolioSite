@@ -6,12 +6,22 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="jumbotron landing" id="landing">
-            <ol class="typed">
-                <li>Hello, and welcome!</li>
-                <li>My name is Arnoldas Rudzevicius.</li>
-                <li>I'm a developer.</li>
-            </ol>
+            @*
+                <ol class="typed">
+                    <li>Hello, and welcome!</li>
+                    <li>My name is Arnoldas Rudzevicius.</li>
+                    <li>I'm a developer.</li>
+                </ol>
+            *@
+            <h1>Hello, and welcome!</h1>
+            <br />
+            <h1>My name is <strong class="asterisk">Arnoldas Rudzevicius</strong>.</h1>
+            <br />
+            <h1>I am a <strong class="asterisk">C#</strong> and <strong class="asterisk">ASP.NET</strong> developer.</h1>
         </div>
     </div>
 </div>
 
+@section script {
+    <script src="~/Scripts/lazyload.js"></script>
+}
