@@ -19,7 +19,7 @@ namespace myPortfolioSite.Controllers
         List<string> whitelist = new List<string> {
             /* "about", */
             "contact",
-            "knowledge",
+            "background",
             "skillset",
             "work",
             "education",
