@@ -18,6 +18,7 @@ namespace myPortfolioSite.Controllers
         // All entries must be lowercase, because we use .ToLower on the challenge string.
         List<string> whitelist = new List<string> {
             /* "about", */
+            "history",
             "contact",
             "background",
             "skillset",
