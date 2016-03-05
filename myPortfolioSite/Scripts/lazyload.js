@@ -1,7 +1,9 @@
 ﻿// TODO: Cleanup file/code.
 // local URL. The order reflects the order of loading.
 var links = [
-    "background",
+    "skillset",
+    "history"
+    //"background",
     //"projects",
     //"contact"
 ];
