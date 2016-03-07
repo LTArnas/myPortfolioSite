@@ -1,10 +1,10 @@
 ﻿// TODO: Cleanup file/code.
 // local URL. The order reflects the order of loading.
 var links = [
+    "projects",
     "skillset",
     "history"
     //"background",
-    //"projects",
     //"contact"
 ];
 
@@ -29,12 +29,13 @@ $(function () {
 // sets scroll trigger value
 function calculateScrollTrigger() {
     // TODO: use variable for scroll percentage trigger ...instead of '2'.
-    bottomScrollTrigger = jqDocument.outerHeight() / 2; // half way
+    bottomScrollTrigger = jqDocument.outerHeight() / 4; // quarter
 }
 
 function lzload() {
     if (jqDocument.scrollTop() >= bottomScrollTrigger)
     {
+        console.log("trigger");
         nextPage();
     }
 }
