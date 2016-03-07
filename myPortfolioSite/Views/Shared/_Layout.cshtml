@@ -12,7 +12,7 @@
 <body>
     @{ Html.RenderPartial("_Navbar"); }
     @* @RenderPage("_Navbar.cshtml"); ---Using RenderPartial instead. *@
-    <div class="container-fluid full-viewport">
+    <div class="container full-viewport">
         @RenderSection("header", false)
         @RenderBody()
         @RenderSection("footer", false)

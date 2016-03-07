@@ -54,7 +54,7 @@ function nextPage() {
 function appendPage(localLink) {
     $.get(localLink, function (data) {
         // Add container.
-        $("body").append("<div class='container-fluid' id='lzload' />");
+        $("body").append("<div class='container' id='lzload' />");
         // Add page data to the container.
         $("#lzload").append(
             // TODO: We create container, then select and append the rows? just append the whole container!
