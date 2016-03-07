@@ -36,6 +36,7 @@ textarea {
 
 .full-viewport {
     height:100%;
+    width: 100%;
 }
 
 /* Compensate for the navbar, so no overlap. */
