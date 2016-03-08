@@ -12,11 +12,22 @@
 <body>
     @{ Html.RenderPartial("_Navbar"); }
     @* @RenderPage("_Navbar.cshtml"); ---Using RenderPartial instead. *@
-    <div class="container full-viewport">
-        @RenderSection("header", false)
-        @RenderBody()
-        @RenderSection("footer", false)
-    </div>
+    @{ if (ViewBag.Homepage ?? false)
+        {
+            <div class="container full-viewport">
+                @RenderSection("header", false)
+                @RenderBody()
+                @RenderSection("footer", false)
+            </div>
+        }
+        else
+        {
+            <div class="container">
+                @RenderSection("header", false)
+                @RenderBody()
+                @RenderSection("footer", false)
+            </div>
+        }}
     <!-- TODO: CDN with fallback jQuery and Bootstrap js. -->
     <script src="~/Scripts/jquery-2.1.4.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>

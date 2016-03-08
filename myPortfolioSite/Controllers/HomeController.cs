@@ -32,11 +32,14 @@ namespace myPortfolioSite.Controllers
         [HttpGet]
         public ActionResult StaticView(string viewName)
         {
-            string viewNameRequest = "Index";
+            string viewNameRequest = "index";
             viewName = viewName.ToLower();
 
             if (whitelist.Contains(viewName))
                 viewNameRequest = viewName;
+
+            if (viewNameRequest == "index")
+                ViewBag.Homepage = true;
 
             return View(viewNameRequest);
         }

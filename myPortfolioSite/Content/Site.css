@@ -1,7 +1,7 @@
 ﻿html, body {
     height:100%;
-    /* padding-top: 50px;
-    padding-bottom: 20px; */
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -39,11 +39,11 @@ textarea {
     width: 100%;
 }
 
-/* Compensate for the navbar, so no overlap. */
+/* Compensate for the navbar, so no overlap.
 body > nav.navbar + .full-viewport {
     padding-top:50px;
 }
-
+    */
 /* Navbar dropdown split-button fix, for collapsed navbar (mobile) view. 
     Allows usage of 'pull-right' on the dropdown button.
 nav.navbar .btn-group.navbar-btn {
