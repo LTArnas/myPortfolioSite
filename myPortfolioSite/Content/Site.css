@@ -1,5 +1,5 @@
 ﻿html, body {
-    height:100%;
+    height: 100%;
     padding-top: 20px;
     /* padding-bottom: 20px; */
 }
@@ -31,12 +31,12 @@ textarea {
 }
 
 .jumbotron {
-    background:none;
+    background: none;
 }
 
 .full-viewport {
-    height:100%;
-    width: 100%;
+    height: 100%;
+    /* width: 100%; */
 }
 
 /* Compensate for the navbar, so no overlap.
@@ -57,7 +57,7 @@ nav.navbar li.dropdown > a {
 nav.navbar ul.dropdown-menu {
     position:absolute;
 }
-  */  
+  */
 /* Navbar dropdown split-button with <a> fix.
 nav.navbar ul.nav.navbar-nav>li.dropdown>a {
     display:inline;
@@ -98,6 +98,7 @@ nav a {
     0%, 30%, 70%, 100% {
         text-shadow: none;
     }
+
     50% {
         text-shadow: 0px 0px 20px white;
     }
@@ -121,9 +122,11 @@ h2 {
     margin-top: 40px;
     margin-bottom: 50px;
 }
+
 div.col-xs-12 > h4 {
     font-weight: bold;
 }
+
 div.col-sm-12 > h3 {
     font-size: xx-large;
     font-weight: bold;
@@ -139,7 +142,6 @@ div.col-sm-12 > h3 {
     height: 1px;
     */
     margin-top: 40px;
-    
     -moz-box-shadow: 0px 0px 10px 10px white;
     -webkit-box-shadow: 0px 0px 10px 10px white;
     box-shadow: 0px 0px 4px 2px white;
@@ -164,32 +166,120 @@ div.col-sm-12 > h3 {
     perspective: 1000px;
 }
 
-/* From and To dates are expected to be first and last children. */
-.history-date > div:first-child {
-    -moz-transform: scale(.8) rotateY(30deg);
-    -ms-transform: scale(.8) rotateY(30deg);
-    -o-transform: scale(.8) rotateY(30deg);
-    -webkit-transform: scale(.8) rotateY(30deg);
-    transform: scale(.8) rotateY(30deg);
-        
-    -moz-box-shadow: 0px 6px 25px -15px;
-    -webkit-box-shadow: 0px 6px 25px -15px;
-    box-shadow: 0px 6px 25px -15px;
-}
+    /* From and To dates are expected to be first and last children. */
+    .history-date > div:first-child {
+        -moz-transform: scale(.8) rotateY(30deg);
+        -ms-transform: scale(.8) rotateY(30deg);
+        -o-transform: scale(.8) rotateY(30deg);
+        -webkit-transform: scale(.8) rotateY(30deg);
+        transform: scale(.8) rotateY(30deg);
+        -moz-box-shadow: 0px 6px 25px -15px;
+        -webkit-box-shadow: 0px 6px 25px -15px;
+        box-shadow: 0px 6px 25px -15px;
+    }
 
-.history-date > div:last-child {
-    -moz-transform: scale(0.8) rotateY(-30deg);
-    -ms-transform: scale(0.8) rotateY(-30deg);
-    -o-transform: scale(0.8) rotateY(-30deg);
-    -webkit-transform: scale(0.8) rotateY(-30deg);
-    transform: scale(0.8) rotateY(-30deg);
-
-    -moz-box-shadow: -0px 6px 25px -15px;
-    -webkit-box-shadow: -0px 6px 25px -15px;
-    box-shadow: -0px 6px 25px -15px;
-}
+    .history-date > div:last-child {
+        -moz-transform: scale(0.8) rotateY(-30deg);
+        -ms-transform: scale(0.8) rotateY(-30deg);
+        -o-transform: scale(0.8) rotateY(-30deg);
+        -webkit-transform: scale(0.8) rotateY(-30deg);
+        transform: scale(0.8) rotateY(-30deg);
+        -moz-box-shadow: -0px 6px 25px -15px;
+        -webkit-box-shadow: -0px 6px 25px -15px;
+        box-shadow: -0px 6px 25px -15px;
+    }
 
 .history-item h1 {
     margin-top: 21px;
     margin-bottom: 21px;
 }
+
+/* Remove the mouseover underline from links*/
+.hover-text-decoration-off:hover {
+    text-decoration: none;
+}
+
+/* Landing's gadget */
+.gadget-text {
+    animation: fadein 2s ease-in 3s 1 forwards, pulse 4s ease-in 8s infinite;
+    opacity:0;
+}
+
+.spotlight-gadget-container {
+    box-sizing: border-box;
+    position: relative;
+    /*
+      border:1px solid blue;
+      */
+    min-height: 1px; /* Display empty element */
+    min-width: 1px; /* Display empty element */
+    width: 100%;
+    height: 100%;
+    margin-top: 50%;
+}
+
+.gadget {
+    position: absolute;
+    box-sizing: border-box;
+    /*position:absolute;
+    border: 1px solid orange;*/
+    min-height: 1px; /* Display empty element */
+    min-width: 1px; /* Display empty element */
+    width: 150px;
+    height: 100px;
+    top: -90%;
+    margin-left: 40%;
+    left: -40px;
+}
+
+.gadget-square-circle {
+    animation: fadein 1s ease-in 3s 1 forwards, to-circle-spin 5s linear 4s 1 forwards;
+    opacity:0;
+    box-shadow: white 0px 0px 1px 0px inset;
+}
+
+@keyframes fadein {
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes to-circle-spin {
+    0% {
+        transform: rotate(0deg) scale(0));
+        border-radius: 0%;
+        box-shadow: white 0px 0px 1px 0px inset;
+        opacity:1;
+    }
+    25% {
+        transform: rotate(0deg) scale(1.5);
+        border-radius: 25%;
+        box-shadow: white 0px 0px 20px 0px inset;
+        opacity:1;
+    }
+    50% {
+        transform: rotate(1350deg) scale(1);
+        border-radius: 50%;
+        box-shadow: white 0px 0px 50px 0px inset;
+        opacity:1;
+    }
+    80% {
+        transform: rotate(2700deg) scale(0.1);
+        border-radius: 100%;
+        box-shadow: white 0px 0px 100px 0px inset;
+        opacity:1;
+    }
+    90% {
+        transform: rotate(2700deg) scale(0);
+        border-radius: 100%;
+        box-shadow: white 0px 0px 0px 100px inset;
+        opacity:1;
+    }
+    100% {
+        transform: rotate(2700deg) scale(0.1);
+        border-radius: 100%;
+        box-shadow: white 0px 0px 0px 1000px;
+        opacity:0;
+    }
+}
+/* End - Landing's gadget */
