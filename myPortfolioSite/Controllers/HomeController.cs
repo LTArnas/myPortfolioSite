@@ -55,7 +55,7 @@ namespace myPortfolioSite.Controllers
             {
                 // GetSection is case sensitive.
                 SmtpSection smtpConfig = (SmtpSection)ConfigurationManager.GetSection("system.net/mailSettings/smtp");
-                
+
                 string body = "<h1>Email From:</h1> <p>{0} ({1})</p> <h2>Message:</h2> <p>{2}</p>";
                 MailMessage message = new MailMessage();
                 // TODO: try-catch for MailAddress construction (for null, for example)
@@ -80,4 +80,3 @@ namespace myPortfolioSite.Controllers
         }
     }
 }
- 
