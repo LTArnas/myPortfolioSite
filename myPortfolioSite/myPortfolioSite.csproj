@@ -113,6 +113,7 @@
     <Content Include="Content\Images\In-White-34px-TM.png" />
     <Content Include="Content\Images\justit_logo-2x.png" />
     <Content Include="Content\Images\london-met-230x105.png" />
+    <Content Include="Content\Images\Projects\Chatter\chat.png" />
     <Content Include="Content\Images\Projects\MicroBlogger\homepage.PNG" />
     <Content Include="Content\Images\Projects\Tvsdb\homepage.png" />
     <Content Include="Content\Site.css" />
